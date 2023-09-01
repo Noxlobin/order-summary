@@ -1,0 +1,148 @@
+:root {
+  --pale-blue: hsl(225, 100%, 94%);
+  --bright-blue: hsl(245, 75%, 52%);
+  --very-pale-blue: hsl(225, 100%, 98%);
+  --desaturated-blue: hsl(224, 23%, 55%);
+  --dark-blue: hsl(223, 47%, 23%);
+  --shadow-color: rgb(172, 172, 204)
+}
+body {
+  background-image: url(images/pattern-background-desktop.svg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  font-family: 'Red Hat Display', sans-serif;
+  background-color: var(--pale-blue);
+  
+}
+
+#box-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 96vh;
+}
+
+.p-text {
+  display: none;
+}
+
+#box {
+  
+  height: 700px;
+  background-color: #fff;
+  border-radius: 30px;
+  width: 450px;
+  box-shadow: 0px 4px 20px var(--shadow-color);
+}
+
+#hero-img {
+  border-top-left-radius: 30px;
+  border-top-right-radius: 30px;
+}
+
+#text {
+  margin: 10px 20px;
+  text-align: center;
+}
+
+#title {
+  font-size: 25px;
+  color: var(--dark-blue);
+  font-weight: 900;
+}
+
+#subtitle {
+  word-wrap: break-word;
+  
+  color: var(--desaturated-blue)
+}
+
+#subtitle-container {
+  width: 300px;
+  margin: 0 auto;
+  
+}
+
+#bought-items {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100px;
+}
+
+#price-checker {
+  display: flex;
+  justify-content: space-around;
+  background-color: var(--very-pale-blue);
+  border-radius: 20px;
+  
+}
+
+#price-checker img {
+  margin-right: 10px;
+}
+
+#price-checker p {
+  margin-left: 10px;
+  color: var(--dark-blue);
+  font-weight: 700;
+}
+
+#price-checker p span {
+  font-weight: 500;
+  color: var(--desaturated-blue);
+}
+
+
+
+#change-container {
+
+  width: 100px;
+  margin: auto 5px;
+}
+
+a {
+  color: var(--bright-blue)
+}
+
+button {
+  font-family: 'Red Hat Display', sans-serif;
+  margin: 35px;
+  margin-bottom: 10px;
+  padding: 15px 30px;
+  width: 350px;
+  border: none;
+  border-radius: 15px;
+  background-color: var(--bright-blue);
+  color: #fff;
+  font-weight: 700;
+  box-shadow: 0px 6px 10px var(--shadow-color);
+  
+}
+
+#cancel-text {
+  color: var(--desaturated-blue);
+  font-weight: 900;
+  
+}
+
+#cancel-text:hover {
+  cursor: pointer;
+  color: var(--dark-blue);
+}
+
+button:hover {
+  background-color: #9ea4ff;
+  cursor: pointer;
+}
+
+a:hover {
+  text-decoration: none;
+  color: #9ea4ff;
+}
+
+@media only screen and (max-width: 992px) {
+  body {
+    background-image: url(images/pattern-background-mobile.svg);
+  }
+}
